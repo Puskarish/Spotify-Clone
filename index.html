@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Web Player: Music for everyone</title>
+    <title>Gaana - Web Player: Your Personal Music</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utility.css">
 </head>
 <body>
     <div class="container flex bg-black">
         <div class="left">
-            <div class="logo">
-                <img class="invert" src="img/logo.svg" alt="logo">
+            <div class="close">
+                <img class="invert" src="img/close.svg" alt="">
             </div>
             <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img class="invert" src="img/logo.svg" alt="logo">
+                </div>
                 <ul>
                     <li><img class="invert" src="img/home.svg" alt="home">Home</li>
                     <li><img class="invert" src="img/search.svg" alt="search">Search</li>
@@ -27,6 +30,7 @@
                 </div>
                 <div class="songList">
                     <ul>
+
                     </ul>
                 </div>
                 <div class="footer">
@@ -44,6 +48,7 @@
             <div class="header">
                 <div class="nav">
                     <div class="hamburgerContainer">
+                        <img class="invert hamburger" src="img/hamburger.svg" alt="">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
@@ -62,10 +67,10 @@
                 </div>
             </div>
 
-            <div class="spotifyPlaylists">
-                <h1>Spotify Playlists</h1>
+            <div class="playlists">
+                <h1>My Playlists</h1>
                 <div class="cardContainer">
-                    <div class="card">
+                    <!-- <div data-folder = "ncs" class="card">
                         <div class="play">
                             <svg width="100" height="130" viewBox="0 0 100 100">
                                 <circle cx="50" cy="50" r="48" fill="#1DB954"/>
@@ -76,7 +81,7 @@
                         <h2>Devotional Songs</h2>
                         <p>Ram Siya Ram, Samay Samjh...</p>
                     </div>
-                    <div class="card">
+                    <div data-folder = "copiedSongs" class="card">
                         <div class="play">
                             <svg width="100" height="130" viewBox="0 0 100 100">
                                 <circle cx="50" cy="50" r="48" fill="#1DB954"/>
@@ -86,106 +91,7 @@
                         <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
                         <h2>Devotional Songs</h2>
                         <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg width="100" height="130" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="48" fill="#1DB954"/>
-                                <polygon points="40,30 40,70 72,50" fill="black"/>
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d0000b27394004f6291d9cceebb6b17ab" alt="">
-                        <h2>Devotional Songs</h2>
-                        <p>Ram Siya Ram, Samay Samjh...</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="playbar">
                     <div class="seekbar">
@@ -194,8 +100,9 @@
                         </div>
                     </div>
                     <div class="abovebar">
+
                         <div class="songinfo">
-                            fff
+                            
                         </div>
                         <div class="songbuttons">
                             <img id="previous" src="img/prevsong.svg" alt="">
@@ -206,10 +113,13 @@
 
                         </div>
                         <div class="songtime">
-                            ffff
+                            
                         </div>
                         <div class="volume">
-
+                            <img src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
                         </div>
                     </div>
                 </div>
